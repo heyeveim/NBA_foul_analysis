@@ -32,7 +32,6 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
     - MIN: Minutes played
     - PF: Personal fouls
     - OREB: Offensive rebounds
-      
   - Rolling averages: 'MIN_avg_3', 'OREB_avg_3', etc.
     
 - <b>Target Variable:</b>
