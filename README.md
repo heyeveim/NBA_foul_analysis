@@ -20,9 +20,7 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
 
 <h2>Dataset </h2>
 
-- <b>Source: NBA Box Score Data (2004–2020) from Kaggle</b>
-
-  [Visit NBA Data Source](https://www.kaggle.com/datasets/nathanlauga/nba-games)
+- <b>Source: NBA Box Score Data (2004–2020) from Kaggle</b> : [Visit NBA Data Source](https://www.kaggle.com/datasets/nathanlauga/nba-games)
 
 - <b>Merged Files</b>: `games_details.csv` and `games.csv` using `GAME_ID`
  
