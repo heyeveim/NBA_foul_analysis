@@ -121,19 +121,38 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
 <h2>Visualizations:</h2>
 
 ### Foul Distribution Histogram
-<img width="398" alt="Image" src="https://github.com/user-attachments/assets/638ce184-5ca7-4d97-972c-34f5334c45de" />
+
+<p align="center">
+  <img width="398" alt="Image" src="https://github.com/user-attachments/assets/638ce184-5ca7-4d97-972c-34f5334c45de" />
+  <br />
+</p>
+
 > Most players commit 3 or fewer fouls per game, but a small portion consistently exceeds 4+, indicating foul-out risk.
 
 ### Box Plot of PF by Position
-<img width="371" alt="Image" src="https://github.com/user-attachments/assets/4dc8206a-d2d8-4247-a1fd-0af124e48d7a" />
+
+<p align="center">
+  <img width="371" alt="Image" src="https://github.com/user-attachments/assets/4dc8206a-d2d8-4247-a1fd-0af124e48d7a" />
+  <br />
+</p>
+
 > Centers show a higher median of personal fouls compared to guards, aligning with their defensive role.
 
 ### Feature Importance (Random Forest)
-<img width="271" alt="Image" src="https://github.com/user-attachments/assets/eab13969-5c03-4b40-bca5-acbedfe4227b" />
+
+<p align="center">
+  <img width="271" alt="Image" src="https://github.com/user-attachments/assets/eab13969-5c03-4b40-bca5-acbedfe4227b" />
+  <br />
+</p>
+
 > `MIN_avg_3` (average minutes played over past 3 games) is by far the most influential predictor of foul-outs.
 
 ### Confusion Matrix (Random Forest)
-<img width="449" alt="Image" src="https://github.com/user-attachments/assets/32f63ad8-300f-41b3-bd04-16fd41d70188" />
+<p align="center">
+  <img width="449" alt="Image" src="https://github.com/user-attachments/assets/32f63ad8-300f-41b3-bd04-16fd41d70188" />
+  <br />
+</p>
+
 > Despite adjustments, models struggled with false positives—many players were misclassified as likely to foul out.
 
 
