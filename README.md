@@ -70,9 +70,12 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
     
 - Applied <b>SMOTE</b> to handle extreme class imbalance (0.42% foul-out rate)
 
-<h3>Result Summary</h3>h3>
+<h3> 🔽Result Summary </h3>h3>
 
-<img width="458" alt="Image" src="https://github.com/user-attachments/assets/435cb68d-a80c-47a7-9049-89a0546317ac" />
+<p align="center">
+  <img width="458" alt="Image" src="https://github.com/user-attachments/assets/435cb68d-a80c-47a7-9049-89a0546317ac" />
+  <br />
+</p>
 
 
 <h3>4. Evaluation:</h3>
