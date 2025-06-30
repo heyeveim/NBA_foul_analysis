@@ -3,18 +3,12 @@
 
 
 <h2>Description</h2>
-This project analyzes NBA player performance using box score data (2004–2020) to predict the probability of <b>fouling out</b> (committing 6+ fouls in a game). By applying machine learning models, we aimed to uncover relationships between key statistics like <b>minutes played</b>, <b>rebounds</b>, and foul patterns to assist coaches and teams with strategic player management. <br><br>
-
-While the models were tested using advanced classification techniques like <b>Random Forest</b> and <b>Gradient Boosting</b>, the analysis revealed significant limitations in using box score data alone, highlighting opportunities for <b>future improvements</b> using richer datasets.
-<br />
 
 This project explores whether we can predict when an NBA player will foul out (commit 6 or more personal fouls in a game) using traditional box score data from 2004–2020. While this data is rich in player stats like minutes, rebounds, and turnovers, it lacks spatial or contextual insight.
 
-Through a series of regression and classification models—including Decision Trees, Random Forest, and Gradient Boosting—we investigated whether patterns in past performance could signal foul-outs.
+Through a series of regression and classification models—including Decision Trees, Random Forest, and Gradient Boosting—we investigated whether patterns in past performance could signal foul-outs. Despite extensive modeling efforts, results showed poor predictive power (best F1-score: 0.06), highlighting the limitations of box score data for such granular predictions.
 
-Despite extensive modeling efforts, results showed poor predictive power (best F1-score: 0.06), highlighting the limitations of box score data for such granular predictions.
-
-**Our takeaway?** Predicting fouling out is more complex than it seems—and the current data doesn't tell the full story.
+<b>Our takeaway?</b> Predicting fouling out is more complex than it seems—and the current data doesn't tell the full story.
 
 
 
