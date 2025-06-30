@@ -74,6 +74,8 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
   <br />
 </p>
 
+Most important feature: MIN_avg_3 (minutes played average over last 3 games)
+
 
 <h3>4. Evaluation:</h3>
 
