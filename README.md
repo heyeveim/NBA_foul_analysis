@@ -4,12 +4,9 @@
 
 <h2>Description</h2>
 
-This project explores whether we can predict when an NBA player will foul out (commit 6 or more personal fouls in a game) using traditional box score data from 2004–2020. While this data is rich in player stats like minutes, rebounds, and turnovers, it lacks spatial or contextual insight.
+This project explores whether NBA players are likely to foul out (commit ≥6 personal fouls in a single game) using traditional box score statistics from 2004–2020. We applied multiple machine learning techniques, including regression and classification models, to analyze patterns related to fouling behavior.
 
-Through a series of regression and classification models—including Decision Trees, Random Forest, and Gradient Boosting—we investigated whether patterns in past performance could signal foul-outs. Despite extensive modeling efforts, results showed poor predictive power (best F1-score: 0.06), highlighting the limitations of box score data for such granular predictions.
-
-<b>Our takeaway?</b> Predicting fouling out is more complex than it seems—and the current data doesn't tell the full story.
-
+Despite leveraging models like Decision Trees, Random Forest, and Gradient Boosting, our models performed poorly, with the highest F1 score reaching just 0.06. The findings highlight the limitations of box score data alone and the need for more contextual data to improve predictive accuracy.
 
 
 <h2>Languages and Tools Used</h2>
@@ -27,37 +24,55 @@ Through a series of regression and classification models—including Decision Tr
 
   [Visit NBA Data Source](https://www.kaggle.com/datasets/nathanlauga/nba-games)
 
+- <b>Merged Files</b>: games_details.csv and games.csv using GAME_ID
+
 - <b>Main Attributes:</b>
   - MIN: Minutes played
   - PF: Personal fouls
   - OREB: Offensive rebounds
   - REB, AST, STL, BLK, TO, PTS
+ 
+- <b>Features Used</b>:
+
+  - Player stats: MIN, OREB, REB, AST, STL, BLK, TO, PTS
+  - Rolling averages: MIN_avg_3, OREB_avg_3, etc.
     
 - <b>Target Variable:</b>
-    - Binary Fouled_Out: 1 if PF ≥ 6, else 0
+    - Fouled_Out (Binary: 1 if PF ≥ 6, else 0)
     - Rolling averages for 3 games were created to enhance predictions
+
  
 <h2>Key Steps </h2>
 
 <h3>1. Data Preparation:</h3>
 
-- Merged games_details.csv and games.csv using GAME_ID
 - Cleaned missing values and filtered out inactive players (MIN = 0)
 - Engineered rolling averages (e.g., MIN_avg_3) for historical context
 
 <h3>2. Exploratory Data Analysis (EDA):</h3>
 
-- Analyzed foul distributions, box plots by positions, and correlations between stats
-- Visualized key insights: centers commit the most fouls; higher minutes → higher fouls
+- Most players commit 3 fouls or less per game
 
-<h3>3. Modeling:</h3>
+- <b>Centers</b> commit more fouls than <b>guards</b> on average
 
-- <b>Regression Models:</b> Predicted continuous PF values.
-- <b>Classification Models:</b>
-  - <b>Decision Tree</b>
-  - <b>Random Forest</b>
-  - <b>Gradient Boosting</b>
-  - Addressed class imbalance using <b>SMOTE</b> and hyperparameter tuning
+- Strong correlation found between <b>minutes played</b> and <b>personal</b> fouls
+
+<h3>3. Modeling Approach:</h3>
+
+<b>Regression Models:</b> 
+
+- Predicted number of fouls (PF) directly
+- Used Decision Tree Regressor
+  
+<b>Classification Models:</b>
+- Predicted Fouled_Out (binary)
+- Models used:
+  - Decision Tree
+  - Random Forest
+  - Gradient Boosting
+  - 
+- Applied <b>SMOTE</b> to handle extreme class imbalance (0.42% foul-out rate)
+
     
 <h3>4. Evaluation:</h3>
 
