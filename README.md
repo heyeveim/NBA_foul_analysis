@@ -2,7 +2,7 @@
 
 
 
-<h2>Description</h2>
+<h2> Project Summary </h2>
 
 This project explores whether NBA players are likely to foul out (commit ≥6 personal fouls in a single game) using traditional box score statistics from 2004–2020. We applied multiple machine learning techniques, including regression and classification models, to analyze patterns related to fouling behavior.
 
