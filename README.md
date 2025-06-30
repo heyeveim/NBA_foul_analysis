@@ -29,10 +29,11 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
 - <b>Features Used</b>:
 
   - Player stats: `MIN`, `OREB`, `REB`, `AST`, `STL`, `BLK`, `TO`, `PTS`
-  - Rolling averages: 'MIN_avg_3', 'OREB_avg_3', etc.
     - MIN: Minutes played
     - PF: Personal fouls
     - OREB: Offensive rebounds
+      
+  - Rolling averages: 'MIN_avg_3', 'OREB_avg_3', etc.
     
 - <b>Target Variable:</b>
     - `Fouled_Out` (Binary: 1 if `PF` ≥ 6, else 0)
