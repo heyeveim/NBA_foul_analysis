@@ -25,7 +25,6 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
 - <b>Merged Files</b>: `games_details.csv` and `games.csv` using `GAME_ID`
  
 - <b>Features Used</b>:
-
   - Player stats: `MIN`, `OREB`, `REB`, `AST`, `STL`, `BLK`, `TO`, `PTS`
     - MIN: Minutes played
     - PF: Personal fouls
