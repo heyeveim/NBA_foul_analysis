@@ -1,4 +1,4 @@
-<h1>Predicting the Probability of Fouling Out in Basketball🏀</h1>
+<h1>The Foul Factor 🏀: Can We Predict When an NBA Player Will Foul Out?</h1>
 
 
 
