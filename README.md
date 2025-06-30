@@ -84,14 +84,37 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
 
 <h2>Challenges and Insights</h2>
 
-- <b>Data Limitations:</b>
-    - Box score data alone is insufficient for foul prediction
-    - Significant class imbalance: players fouling out (PF ≥ 6) represent only 0.42% of the dataset
+- <b>Key Challenges:</b>
+   - <b>Severe class imbalance</b>: only 0.42% players fouled out
+   - <b>Box score data lacks context</b>: no spatial, player bio, or foul type data
+   - <b>Overfitting risk</b> due to low variation in data
+   - Ensemble models did not significantly improve results
       
 - <b>Key Insights</b>:
-  - Minutes played is the most significant factor for foul prediction
-  - Ensemble models like Random Forest and Gradient Boosting were ineffective due to weak relationships in the data
+   - <b>Minutes played</b> is the strongest predictor of fouls
+   - <b>Centers</b> are more prone to fouling out
+   - Players who foul out often show similar patterns (high activity, high rebounds)
+   - Regression and classification both fail without richer context
 
+
+
+<h2> Future Work: </h2>
+
+<h3>Data Enhancements:</h3>h3>
+
+ - Include player characteristics (height, wingspan, etc.)
+ - Add spatial data (e.g., foul location maps)
+ - Use play-by-play data for context (game pressure, score gap, substitution timing)
+
+<h3> Feature Engineering:</h3>h3>
+
+ - Differentiate foul types (offensive vs defensive)
+ - Apply PCA, log transforms, interaction features
+
+<h3> New Problem Framing: </h3>h3>
+ - Instead of "Will a player foul out?", ask:
+   - What types of fouls are most common by position/time?
+   - How do fouls impact player performance?
 
 
 <h2>Visualizations:</h2>
@@ -113,21 +136,6 @@ Model Performance Comparison: <br/>
 <br />
 </p>
 
-<h2>Future Recommendation</h2>
-
-<h3>1. Data Enhancements:</h3>
-
-- Integrate spatial data (e.g., foul location maps)
-- Include player characteristics like height and wingspan
-- Add substitution and game-context data.
-
-<h3>2. Feature Engineering:</h3>
-
-- Combine variables to create advanced features (e.g., offensive vs defensive fouls)
-
-<h3>3. Refine Research Focus:</h3>
-
-- Narrow to specific fouls: "How do offensive fouls impact player performance?"
 
 <h2>Conclusion</h2>
 
