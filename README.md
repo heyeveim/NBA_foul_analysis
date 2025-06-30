@@ -112,6 +112,7 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
  - Apply PCA, log transforms, interaction features
 
 <h3> New Problem Framing: </h3>
+
  - Instead of "Will a player foul out?", ask:
    - What types of fouls are most common by position/time?
    - How do fouls impact player performance?
