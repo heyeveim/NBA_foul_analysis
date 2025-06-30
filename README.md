@@ -100,13 +100,13 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
 
 <h2> Future Work: </h2>
 
-<h3>Data Enhancements:</h3>h3>
+<h3>Data Enhancements:</h3>
 
  - Include player characteristics (height, wingspan, etc.)
  - Add spatial data (e.g., foul location maps)
  - Use play-by-play data for context (game pressure, score gap, substitution timing)
 
-<h3> Feature Engineering:</h3>h3>
+<h3> Feature Engineering:</h3>
 
  - Differentiate foul types (offensive vs defensive)
  - Apply PCA, log transforms, interaction features
