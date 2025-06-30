@@ -25,17 +25,14 @@ Despite leveraging models like Decision Trees, Random Forest, and Gradient Boost
   [Visit NBA Data Source](https://www.kaggle.com/datasets/nathanlauga/nba-games)
 
 - <b>Merged Files</b>: `games_details.csv` and `games.csv` using `GAME_ID`
-
-- <b>Main Attributes:</b>
-  - MIN: Minutes played
-  - PF: Personal fouls
-  - OREB: Offensive rebounds
-  - REB, AST, STL, BLK, TO, PTS
  
 - <b>Features Used</b>:
 
   - Player stats: `MIN`, `OREB`, `REB`, `AST`, `STL`, `BLK`, `TO`, `PTS`
   - Rolling averages: 'MIN_avg_3', 'OREB_avg_3', etc.
+    - MIN: Minutes played
+    - PF: Personal fouls
+    - OREB: Offensive rebounds
     
 - <b>Target Variable:</b>
     - `Fouled_Out` (Binary: 1 if `PF` ≥ 6, else 0)
